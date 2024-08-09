@@ -1,0 +1,98 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receitas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_red"
+        android:layout_marginBottom="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Receita Sem Glúten -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_recipe_topic">
+
+                <ImageView
+                    android:id="@+id/imageViewGlutenFree"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/freegluten"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receitas Sem Glúten"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <!-- Receita Sem Lactose -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_recipe_topic">
+
+                <ImageView
+                    android:id="@+id/imageViewLactoseFree"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/freelactose"
+                    android:layout_marginEnd="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Receitas Sem Lactose"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        <!-- Receita Veganas -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_recipe_topic">
+
+            <ImageView
+                android:id="@+id/imageViewVegana"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/vegana"
+                android:layout_marginEnd="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receitas Veganas"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
